@@ -4,7 +4,22 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Mom's Homemade Cooking</title>
-    <!--also link to your css here and any fonts from Google-->
+    <link rel="stylesheet" href="./css/kvongkha-project-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Sunflower:300&display=swap" rel="stylesheet">
+    <style>
+        .food {
+            height: 300px;
+            width: 400px;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .portrait {
+            height: 400px;
+            width: 300px;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -26,11 +41,12 @@
             <main>
                 <section class="row"> <!--flex container for one row with 3 images-->
                     <article>
-                        <header>
+                        <header class="col">
                             <h2>Chicken Pho</h2>
                             <a href="/kvongkha-recipes.html">
-                                <img src="./media/pho.jpg" alt="Pho">
+                                <img class="food" src="./media/pho.jpg" alt="Pho">
                             </a>
+                            <p class="source">Photo by: Global Panorama</p>
                         </header>
                         <!--going to use flex box-->
                     </article>
@@ -38,35 +54,41 @@
                         <header>
                             <h2>Egg Rolls</h2>
                             <a href="/kvongkha-recipes.html">
-                                <img src="./media/egg-rolls1.jpg" alt="Egg Rolls"> <!--these image links should link to the recipe page in my site-->
+                                <img class="food" src="./media/egg-rolls1.jpg" alt="Egg Rolls"> <!--these image links should link to the recipe page in my site-->
                             </a>
+                            <p class="source">Photo by: Bryon Lippincott</p>
                         </header>
                     </article>
                     <article>
                         <header>
                             <h2>Thai Panang Red Curry</h2>
                             <a href="kvongkha-recipes.html">
-                                <img src="./media/red-curry.jpg" alt="Panang Red Curry">
+                                <img class="food" src="./media/red-curry.jpg" alt="Panang Red Curry">
                             </a>
+                            <p class="source">Photo by: Kurman Communications</p>
                         </header>
                     </article>
                 </section>
                 
                 <section class="row"> <!--another row for one image with written content of the most recent recipe-->
-                    <h3>Chicken Pho</h3>
                     <article>
-                        <header class="date">
-                            <h3>October 19, 2019</h3>
-                            <img src="./media/pho.jpg" alt="Pho">
-                        </header>
-                        <p>Pho is a classic Vietnamese noodle soup bowl. This recipe is for a chicken broth rather than the beef broth you will typically have at a restaurant.
+                        <header class="col">
+                            <h3>Chicken Pho</h3>
+                            <h3 class="date">October 19, 2019</h3>
+                            <p>Pho is a classic Vietnamese noodle soup bowl. This recipe is for a chicken broth rather than the beef broth you will typically have at a restaurant.
                             My mom used to always make the beef broth, but ever since my Uncle from France visited Seattle and shared his chicken broth recipe, my mom has only made this broth ever since.
                             I do like the chicken broth better because it is more light and usually less salty than the beef. The ingredients list may look intimidating, but pho includes a variety of toppings and condiments.
                             We typically use all of it from bean sprouts to garlic chili oil, but it is up to you! 
                             One note to add about this recipe is that the longer the pho broth is boiled, the better the taste and flavor. Enjoy!</p>
+                            <img class="recipe" src="./media/pho.jpg" alt="Pho">
+                            <p class="source">Photo by: Global Panorama</p>
+                        </header>
                     </article>
+                </section>
+
+                <section class="row">
                     <article>
-                        <header class="box">
+                        <header class="col">
                             <h3>Ingredients</h3>
                             <p>Servings: 4-6</p>
                         </header>
@@ -122,10 +144,11 @@
             <aside> <!--this aside section is on the right column-->
             <section class="row"> <!--flex element for left block column-->
                 <article> 
-                    <header>
+                    <header class="col">
                         <a href="kvongkha-our-story.html">
-                            <img src="./media/mom1.jpg" alt="Mom"/>
+                            <img class="portrait" src="./media/mom1.jpg" alt="Mom"/>
                         </a>
+                        <p class="source">Photo by: Karissa Vongkhamchanh</p>
                     </header>
                     <p>Lasamy Vongkhamchanh, also know as Lisa, Mom, Auntie, Sister, Wife, and Daughter, 
                     has practiced cooking Southeast Asian cuisine since she was a young girl. 
