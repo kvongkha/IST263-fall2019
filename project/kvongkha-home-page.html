@@ -2,37 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8">
     <title>Mom's Homemade Cooking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/kvongkha-project-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Kalam|Sunflower:300&display=swap" rel="stylesheet">
-    <style>
-        .food {
-            height: 300px;
-            width: 400px;
-            padding: 10px;
-            margin: 0px;
-        }
-
-        .portrait {
-            height: 400px;
-            width: 300px;
-        }
-
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container"> <!--overall page content container-->
         <header class="header">
             <h1>Mom's Homemade Cooking</h1>
-            <!--trying to create a sandwich bar and link to other pages in my website-->
-            <!--what would the links be?-->
-            <nav class="bar">
-                <ul>
-                    <li><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-home-page.html">Home</a></li>
-                    <li><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-our-story.html">Our Story</a></li>
-                    <li><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-recipes.html">Recipes</a></li>
+            <nav>
+                <ul class="bar">
+                    <li class="page"><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-home-page.html">Home</a></li>
+                    <li class="page"><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-our-story.html">Our Story</a></li>
+                    <li class="page"><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-recipes.html">Recipes</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,57 +27,48 @@
             <main>
                 <section class="row"> <!--flex container for one row with 3 images-->
                     <article>
-                        <header class="col">
-                            <h2>Chicken Pho</h2>
-                            <a href="/kvongkha-recipes.html">
-                                <img class="food" src="./media/pho.jpg" alt="Pho">
-                            </a>
+                        <div class="col">
+                            <h2 class="dish">Chicken Pho</h2>
+                            <img class="food" src="./media/pho.jpg" alt="Pho">
                             <p class="source">Photo by: Global Panorama</p>
-                        </header>
-                        <!--going to use flex box-->
+                        </div>
                     </article>
                     <article>
-                        <header>
-                            <h2>Egg Rolls</h2>
-                            <a href="/kvongkha-recipes.html">
-                                <img class="food" src="./media/egg-rolls1.jpg" alt="Egg Rolls"> <!--these image links should link to the recipe page in my site-->
-                            </a>
+                        <div>
+                            <h2 class="dish">Egg Rolls</h2>
+                            <img class="food" src="./media/egg-rolls1.jpg" alt="Egg Rolls">
                             <p class="source">Photo by: Bryon Lippincott</p>
-                        </header>
+                        </div>
                     </article>
                     <article>
-                        <header>
-                            <h2>Thai Panang Red Curry</h2>
-                            <a href="kvongkha-recipes.html">
-                                <img class="food" src="./media/red-curry.jpg" alt="Panang Red Curry">
-                            </a>
+                        <div>
+                            <h2 class="dish">Thai Panang Red Curry</h2>
+                            <img class="food" src="./media/red-curry.jpg" alt="Panang Red Curry">
                             <p class="source">Photo by: Kurman Communications</p>
-                        </header>
+                        </div>
                     </article>
                 </section>
                 
-                <section class="row"> <!--another row for one image with written content of the most recent recipe-->
-                    <article>
-                        <header class="col">
-                            <h3>Chicken Pho</h3>
-                            <h3 class="date">October 19, 2019</h3>
-                            <p>Pho is a classic Vietnamese noodle soup bowl. This recipe is for a chicken broth rather than the beef broth you will typically have at a restaurant.
+                <section class="row">
+                    <div class="col">
+                        <h3 class="dish1">Chicken Pho</h3>
+                        <h3 class="date">October 19, 2019</h3>
+                        <img class="img1" src="./media/pho.jpg" alt="Pho">
+                        <p class="source">Photo by: Global Panorama</p>
+                        <p class="info">Pho is a classic Vietnamese noodle soup bowl. This recipe is for a chicken broth rather than the beef broth you will typically have at a restaurant.
                             My mom used to always make the beef broth, but ever since my Uncle from France visited Seattle and shared his chicken broth recipe, my mom has only made this broth ever since.
                             I do like the chicken broth better because it is more light and usually less salty than the beef. The ingredients list may look intimidating, but pho includes a variety of toppings and condiments.
                             We typically use all of it from bean sprouts to garlic chili oil, but it is up to you! 
                             One note to add about this recipe is that the longer the pho broth is boiled, the better the taste and flavor. Enjoy!</p>
-                            <img class="recipe" src="./media/pho.jpg" alt="Pho">
-                            <p class="source">Photo by: Global Panorama</p>
-                        </header>
-                    </article>
+                    </div>
                 </section>
 
-                <section class="row">
+                <section class="row2">
                     <article>
-                        <header class="col">
+                        <div class="border">
                             <h3>Ingredients</h3>
                             <p>Servings: 4-6</p>
-                        </header>
+                        </div>
                         <ul>
                             <li>1 half or whole chicken as stalk</li>
                             <li>1 ginger root</li>
@@ -112,7 +89,7 @@
                             <li>black pepper or white pepper</li>
                             <li>fresh rice noodles or dried pho noodles</li>
                         </ul>
-                        <h3>Condiments & Optional</h3>
+                        <h3 class="subhead">Condiments & Optional</h3>
                         <ul>
                             <li>beef/pork/chicken meatballs (optional)</li>
                             <li>wonton soup base and chicken bouillion (optional)</li>
@@ -120,7 +97,7 @@
                             <li>sriracha</li>
                             <li>garlic chili oil</li>
                         </ul>
-                        <h3>Steps</h3>
+                        <h3 class="subhead">Steps</h3>
                         <ol>
                             <li>Boil a pot of water for the stalk.</li>
                             <li>Clean chicken and put inside the boiling water with some salt. The chicken should be boiled for about 45 minutes to an hour until it is cooked.</li>
@@ -140,26 +117,23 @@
                     </article>
                 </section>
             </main>
-
-            <aside> <!--this aside section is on the right column-->
-            <section class="row"> <!--flex element for left block column-->
-                <article> 
-                    <header class="col">
-                        <a href="kvongkha-our-story.html">
-                            <img class="portrait" src="./media/mom1.jpg" alt="Mom"/>
-                        </a>
-                        <p class="source">Photo by: Karissa Vongkhamchanh</p>
-                    </header>
-                    <p>Lasamy Vongkhamchanh, also know as Lisa, Mom, Auntie, Sister, Wife, and Daughter, 
-                    has practiced cooking Southeast Asian cuisine since she was a young girl. 
-                    She loves to cook for family gatherings like potlucks and holidays because she believes that food is the best gift to give anyone. </p>
-                </article>
-            </section>    
+            <aside> <!--aside smaller content on the right side column-->
+                <section class="row1-1">
+                <div class="col2">
+                <a href="kvongkha-our-story.html">
+                    <img class="img2" src="./media/mom1.jpg" alt="Lasamy Vongkhamchanh"/>
+                </a>
+                <p class="bio">Lasamy Vongkhamchanh, also know as Lisa, Mom, Auntie, Sister, Wife, and Daughter, 
+                            has practiced cooking Southeast Asian cuisine since she was a young girl. 
+                            She loves to cook for family gatherings like potlucks and holidays because she believes that food is the best gift to give anyone. </p>
+                    </div>
+                </section>
             </aside>
-            <footer>
-                <p>Created by Karissa Vongkhamchanh</p>
-            </footer>
         </div>
+
+            <footer>
+                <p class="author">Created by Karissa Vongkhamchanh</p>
+            </footer>
     </div>
 </body>
 </html>

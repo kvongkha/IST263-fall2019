@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8">
     <title>Mom's Homemade Cooking | Recipes</title>
-    <!--also link to your css here and any fonts from Google-->
+    <link rel="stylesheet" href="./css/kvongkha-project-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
 </head>
     
 <body>
@@ -13,34 +16,35 @@
             <h1>Recipes</h1>
             <!--trying to create a sandwich bar and link to other pages in my website-->
             <!--what would the links be? github.io?-->
-            <nav class="bar">
-                <ul>
-                    <li><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-home-page.html">Home</a></li>
-                    <li><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-our-story.html">Our Story</a></li>
-                    <li><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-recipes.html">Recipes</a></li>
+            <nav>
+                <ul class="bar">
+                    <li class="page"><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-home-page.html">Home</a></li>
+                    <li class="page"><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-our-story.html">Our Story</a></li>
+                    <li class="page"><a href="https://kvongkha.github.io/ist263-fall2019/project/kvongkha-recipes.html">Recipes</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
         <section class="description">
-            <h2>Chicken Pho</h2>
+            <h2 class="dish1">Chicken Pho</h2>
             <article>
-                <header class="date">
-                    <h2>October 19, 2019</h2>
-                    <img src="./media/pho.jpg" alt="Pho">
-                    <p>Pho is a classic Vietnamese noodle soup bowl. This recipe is for a chicken broth rather than the beef broth you will typically have at a restaurant.
+                <div class="col1-3">
+                    <h2 class="date">October 19, 2019</h2>
+                    <img class="img1" src="./media/pho.jpg" alt="Pho">
+                    <p class="source">Photo by: Global Panorama</p>
+                    <p class="info">Pho is a classic Vietnamese noodle soup bowl. This recipe is for a chicken broth rather than the beef broth you will typically have at a restaurant.
                     My mom used to always make the beef broth, but ever since my Uncle from France visited Seattle and shared his chicken broth recipe, my mom has only made this broth ever since.
                     I do like the chicken broth better because it is more light and usually less salty than the beef. The ingredients list may look intimidating, but pho includes a variety of toppings and condiments.
                     We typically use all of it from bean sprouts to garlic chili oil, but it is up to you! 
                     One note to add about this recipe is that the longer the pho broth is boiled, the better the taste and flavor. Enjoy!</p>
-                </header>
+                </div>
             </article>
-            <article> <!--box model block element-->
-                <header class="box">
-                    <h2>Ingredients</h2>
+            <article class="row1-3"> <!--box model block element-->
+                <div class="border1-3">
+                    <h2 class="subhead">Ingredients</h2>
                     <p>Servings: 4-6</p>
-                </header>
+                </div>
                 <ul>
                     <li>1 half or whole chicken as stalk</li>
                     <li>1 ginger root</li>
@@ -61,7 +65,7 @@
                     <li>black pepper or white pepper</li>
                     <li>fresh rice noodles or dried pho noodles</li>
                 </ul>
-                <h2>Condiments & Optional</h2>
+                <h2 class="subhead">Condiments & Optional</h2>
                 <ul>
                     <li>beef/pork/chicken meatballs (optional)</li>
                     <li>wonton soup base and chicken bouillion (optional)</li>
@@ -69,7 +73,7 @@
                     <li>sriracha</li>
                     <li>garlic chili oil</li>
                 </ul>
-                <h2>Steps</h2>
+                <h2 class="subhead">Steps</h2>
                 <ol>
                     <li>Boil a pot of water for the stalk.</li>
                     <li>Clean chicken and put inside the boiling water with some salt. The chicken should be boiled for about 45 minutes to an hour until it is cooked.</li>
@@ -90,22 +94,23 @@
         </section>
 
         <section class="description">
-            <h3>Thai Panang Curry</h3>
+            <h3 class="dish1">Thai Panang Curry</h3>
             <article>
-                <header class="date">
-                    <h3>October 20, 2019</h3>
-                    <img src="./media/red-curry.jpg" alt="Red Curry">
-                    <p>Also known as Red Curry, this dish is easy to make as long as you have the right ingredients. My family loves to have
+                <div class="col1-3">
+                    <h3 class="date">October 20, 2019</h3>
+                    <img class="img1" src="./media/red-curry.jpg" alt="Red Curry">
+                    <p class="source">Photo by: Kurman Communications</p>
+                    <p class="info">Also known as Red Curry, this dish is easy to make as long as you have the right ingredients. My family loves to have
                         our curry over rice. There is the perfect balance of protein and veggies in the dish. What makes this spicy is the curry paste,
                         so based on your liking add as little or as much as you'd like.
                     </p>
-                </header>
+                </div>
             </article>
-            <article>
-                <header class="box">
-                    <h3>Ingredients</h3>
+            <article class="row1-3">
+                <div class="border1-3">
+                    <h3 class="subhead">Ingredients</h3>
                     <p>Servings: 4-6</p>
-                </header>
+                </div>
                 <ul>
                     <li>sliced chicken breast or whole chicken cut into pie slices</li>
                     <li>chopped lemongrass</li>
@@ -124,7 +129,7 @@
                     <li>1 can of coconut milk</li>
                     <li>red curry paste</li>
                 </ul>
-                <h3>Steps</h3>
+                <h3 class="subhead">Steps</h3>
                 <ol>
                     <li>Clean and cut chicken into slices and set aside in a bowl.</li>
                     <li>Chop garlic and shallots finely. Then add 1 teaspoon of oil in a pot and add the garlic and shallots.
@@ -142,23 +147,24 @@
         </section>
 
         <section class="description">
-            <h4>Egg Rolls</h4>
+            <h4 class="dish1">Egg Rolls</h4>
             <article>
-                <header class="date">
-                    <h4>October 20, 2019</h4>
-                    <img src="./media/egg-rolls1.jpg" alt="Egg Rolls">
-                    <p>Are they called egg rolls or spring rolls? On the West Coast, we call them egg rolls when they are fried while spring rolls 
+                <div class="col1-3">
+                    <h4 class="date">October 20, 2019</h4>
+                    <img class="img1" src="./media/egg-rolls1.jpg" alt="Egg Rolls">
+                    <p class="source">Photo by: Bryon Lippincott</p>
+                    <p class="info">Are they called egg rolls or spring rolls? On the West Coast, we call them egg rolls when they are fried while spring rolls 
                         are wrapped with the clear rice paper and are therefore transparent. Living on the East Coast for three years, I find that the
                         names are interchangable. What do you think? Why do I see egg rolls named as spring rolls?
                         This bite-size, crunchy, and savory appetizer is the perfect dish to bring as a potluck item! 
                     </p>
-                </header>
+                </div>
             </article>
-            <article>
-                <header class="box">
-                    <h4>Ingredients</h4>
+            <article class="row1-3">
+                <div class="border1-3">
+                    <h4 class="subhead">Ingredients</h4>
                     <p>Servings: 10-15</p>
-                </header>
+                </div>
                 <ul>
                     <li>2 lbs of chopped/ground pork/chicken</li>
                     <li>3 eggs</li>
@@ -175,7 +181,7 @@
                     <li>white pepper</li>
                     <li>egg roll wrap</li>
                 </ul>
-                <h4>Steps</h4>
+                <h4 class="subhead">Steps</h4>
                 <ol>
                     <li>Soak vermicelli noodles into warm water.</li>
                     <li>Finely slice carrots and mushrooms, dice yellow/white and green onion, and garlic cloves. </li>
@@ -195,7 +201,7 @@
 
         </main>
         <footer>
-            <p>Created by Karissa Vongkhamchanh</p>
+            <p class="author">Created by Karissa Vongkhamchanh</p>
         </footer>
     </div>
 </body>
