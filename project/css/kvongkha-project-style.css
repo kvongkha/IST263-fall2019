@@ -1,69 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Sunflower:300&display=swap');
 
-
-@media only screen and (max-width:620px) {
-    /* For mobile phones: */
-    .row {
-        flex-direction: column;
-    }
-
-    aside {
-        display: none;
-    }
-
-    .row2 {
-        width: 40%;
-    }
-
-    .row {
-        width: 20%;
-    }
-
-    .img1 {
-        width: 100%;
-        max-width: 450px;
-        height: auto;
-    }
-
-    .food {
-        width: 100%;
-        height: auto;
-    }
-
-    .info {
-        width: 40%;
-        text-align: left;
-    }
-
-    body {
-        font-size: 5vw;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    /* For tablets: */
-    .row {
-        flex-direction: column;
-    }
-
-    aside {
-        display: none;
-    }
-
-    .row2 {
-        width: 50%;
-    }
-
-    .row {
-        width: 40%;
-    }
-
-    .info {
-        width: 30%;
-    }
-}
-
 body {
     font-family: 'Sunflower', sans-serif;
     background-color: papayawhip;
@@ -76,19 +13,16 @@ body {
     color: palegoldenrod;
     font-size: 48px;
     padding: 30px;
-    margin: 10px;
 }
 
 /*navigation bar */
 .bar {
     list-style-type: none;
-    margin: 10px;
-    padding: 5px;
     background-color: olivedrab;
     overflow: hidden;
-    width: 98%;
     font-family: 'Kalam', cursive;
     font-size: 18px;
+    padding: 5px;
 }
 
 .page {
@@ -98,9 +32,9 @@ body {
 .page a {
     display: block;
     color: white;
-    padding: 14px 16px;
     text-align: center;
     text-decoration: none;
+    padding: 14px 16px;
 }
 
 
@@ -108,16 +42,12 @@ body {
     background-color: palegoldenrod;
 }
 
-.page-content {
-    display: flex;
-}
 
 /*h2 of first row images*/
 .dish {
     text-align: left;
     font-family: 'Kalam', cursive;
     font-size: 24px;
-    padding: 0px;
     margin: 10px;
 }
 
@@ -125,15 +55,11 @@ body {
 .dish1 {
     font-family: 'Kalam', cursive;
     font-size: 28px;
-    padding: 0px;
-    margin: 10px;
     text-align: center;
 }
 
 .source {
     font-size: 12px;
-    padding: 0px;
-    margin: 0px;
     text-align: center;
 }
 
@@ -142,105 +68,79 @@ body {
     text-align: center;
 }
 
-/*flex container display */
-.row {
-    display: flex;
-    padding: 10px;
-    margin: 15px;
-}
-
-.col {
-    flex: 3;
-    margin: 0 auto;
-}
 
 /*aside info about mom */
 .bio {
-    width: 90%;
-    margin: 0 auto;
-    line-height: 100%;
     text-align: center;
+    display: inline-block;
+    font-size: 14px;
 }
 
 .img2 {
-    height: 320px;
-    width: 220px;
-    float: right;
-    display: block;
-}
-
-.col2 {
-    flex: 1;
-}
-
-/*image of instructional recipe */
-.img1 {
-    width: 750px;
-    height: 500px;
+    height: auto;
+    width: 240px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+.name {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+/*image of instructional recipe */
+.img1 {
+    width: 650px;
+    height: auto;
+}
+
 /*gallery of dishes */
 .food {
-    height: 225px;
-    width: 325px;
-    padding: 10px;
-    margin: 0px;
+    height: auto;
+    width: 350px;
 }
 
 /* recipe instructions with border box */
 .row2 {
-    display: flex;
+    border: solid;
     padding: 10px;
     margin: 10px;
-    border: solid;
-}
-
-.border {
-    flex: 3;
-    margin: 0 auto;
-    border-bottom: solid;
 }
 
 .subhead {
     border-bottom: solid;
     font-family: 'Kalam', cursive;
-    font-size: 20px 5vw;
+    font-size: 20px;
     text-align: left;
     padding: 10px;
-    margin: 0px;
 }
 
 /*footer styling */
 .author {
-    padding: 20px;
-    margin: 10px;
     font-style: italic;
 }
 
 .info {
-    margin-left: auto;
-    margin-right: auto;
     line-height: 200%;
-    width: 70%;
-    text-align: center;
+    text-align: left;
 }
 
 /*styling for our-story page */
 .img-family {
-    height: 500px;
+    height: auto;
     width: 750px;
-    padding: 20px;
     margin-left: auto;
     margin-right: auto;
     float: right;
+    padding: 20px;
 }
 
 .h2-story {
     font-family: 'Kalam', cursive;
-    
+    font-size: 20px;
 }
 
 .story {
@@ -248,27 +148,8 @@ body {
     text-align: justify;
 }
 
-.col1-1 {
-    flex: 1;
-}
 
 /*styling for recipe page */
 .row1-3 {
     border: solid;
-}
-
-.border1-3 {
-    flex: 1;
-    margin: 0 auto;
-}
-
-.col1-3 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.description {
-    padding: 20px;
-    margin: 30px;
 }
