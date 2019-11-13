@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Mom's Homemade Cooking | Recipes</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap link comes before other links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/kvongkha-project-style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <title>Mom's Homemade Cooking | Recipes</title>
 </head>
     
 <body>
@@ -29,9 +32,9 @@
         <section class="description">
             <h2 class="dish1">Chicken Pho</h2>
             <article>
-                <div class="col1-3">
+                <div>
                     <h2 class="date">October 19, 2019</h2>
-                    <img class="img1" src="./media/pho.jpg" alt="Pho">
+                    <img class="img1 img-fluid mx-auto d-block" src="./media/pho.jpg" alt="Pho">
                     <p class="source">Photo by: Global Panorama</p>
                     <p class="info">Pho is a classic Vietnamese noodle soup bowl. This recipe is for a chicken broth rather than the beef broth you will typically have at a restaurant.
                     My mom used to always make the beef broth, but ever since my Uncle from France visited Seattle and shared his chicken broth recipe, my mom has only made this broth ever since.
@@ -41,7 +44,7 @@
                 </div>
             </article>
             <article class="row1-3"> <!--box model block element-->
-                <div class="border1-3">
+                <div>
                     <h2 class="subhead">Ingredients</h2>
                     <p>Servings: 4-6</p>
                 </div>
@@ -96,9 +99,9 @@
         <section class="description">
             <h3 class="dish1">Thai Panang Curry</h3>
             <article>
-                <div class="col1-3">
+                <div>
                     <h3 class="date">October 20, 2019</h3>
-                    <img class="img1" src="./media/red-curry.jpg" alt="Red Curry">
+                    <img class="img1 img-fluid mx-auto d-block" src="./media/red-curry.jpg" alt="Red Curry">
                     <p class="source">Photo by: Kurman Communications</p>
                     <p class="info">Also known as Red Curry, this dish is easy to make as long as you have the right ingredients. My family loves to have
                         our curry over rice. There is the perfect balance of protein and veggies in the dish. What makes this spicy is the curry paste,
@@ -107,7 +110,7 @@
                 </div>
             </article>
             <article class="row1-3">
-                <div class="border1-3">
+                <div>
                     <h3 class="subhead">Ingredients</h3>
                     <p>Servings: 4-6</p>
                 </div>
@@ -149,9 +152,9 @@
         <section class="description">
             <h4 class="dish1">Egg Rolls</h4>
             <article>
-                <div class="col1-3">
+                <div>
                     <h4 class="date">October 20, 2019</h4>
-                    <img class="img1" src="./media/egg-rolls1.jpg" alt="Egg Rolls">
+                    <img class="img1 img-fluid mx-auto d-block" src="./media/egg-rolls1.jpg" alt="Egg Rolls">
                     <p class="source">Photo by: Bryon Lippincott</p>
                     <p class="info">Are they called egg rolls or spring rolls? On the West Coast, we call them egg rolls when they are fried while spring rolls 
                         are wrapped with the clear rice paper and are therefore transparent. Living on the East Coast for three years, I find that the
@@ -161,7 +164,7 @@
                 </div>
             </article>
             <article class="row1-3">
-                <div class="border1-3">
+                <div>
                     <h4 class="subhead">Ingredients</h4>
                     <p>Servings: 10-15</p>
                 </div>
@@ -204,5 +207,10 @@
             <p class="author">Created by Karissa Vongkhamchanh</p>
         </footer>
     </div>
+    
+<!--jQuery first, then Popper.js, then Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

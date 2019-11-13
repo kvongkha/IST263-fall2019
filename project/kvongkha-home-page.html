@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Mom's Homemade Cooking</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap link comes before other links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/kvongkha-project-style.css">
     <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <title>Mom's Homemade Cooking</title>
 </head>
 
 <body>
@@ -27,33 +30,44 @@
             <main>
                 <section class="row"> <!--flex container for one row with 3 images-->
                     <article>
-                        <div class="col">
-                            <h2 class="dish">Chicken Pho</h2>
-                            <img class="food" src="./media/pho.jpg" alt="Pho">
-                            <p class="source">Photo by: Global Panorama</p>
-                        </div>
+                    <div class="col-sm-12 col">
+                        <h2 class="dish">Chicken Pho</h2>
+                        <img class="food img-thumbnail" src="./media/pho.jpg" alt="Pho">
+                        <p class="source">Photo by: Global Panorama</p>
+                        <!--<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">About the Recipe</button>
+                        <div id="demo" class="collapse">
+                                Pho is a classic Vietnamese noodle soup bowl. This recipe is for a chicken broth rather than the beef broth you will typically have at a restaurant.
+                                My mom used to always make the beef broth, but ever since my Uncle from France visited Seattle and shared his chicken broth recipe, my mom has only made this broth ever since.
+                                I do like the chicken broth better because it is more light and usually less salty than the beef. The ingredients list may look intimidating, but pho includes a variety of toppings and condiments.
+                                We typically use all of it from bean sprouts to garlic chili oil, but it is up to you! 
+                                One note to add about this recipe is that the longer the pho broth is boiled, the better the taste and flavor. Enjoy!
+                        </div>-->
+                    </div>
                     </article>
+
                     <article>
-                        <div>
-                            <h2 class="dish">Egg Rolls</h2>
-                            <img class="food" src="./media/egg-rolls1.jpg" alt="Egg Rolls">
-                            <p class="source">Photo by: Bryon Lippincott</p>
-                        </div>
+                    <div class="col-sm-12 col">
+                        <h2 class="dish">Egg Rolls</h2>
+                        <img class="food img-thumbnail" src="./media/egg-rolls1.jpg" alt="Egg Rolls">
+                        <p class="source">Photo by: Bryon Lippincott</p>
+                    </div>
                     </article>
+ 
                     <article>
-                        <div>
-                            <h2 class="dish">Thai Panang Red Curry</h2>
-                            <img class="food" src="./media/red-curry.jpg" alt="Panang Red Curry">
-                            <p class="source">Photo by: Kurman Communications</p>
-                        </div>
+                    <div class="col-sm-12 col">
+                        <h2 class="dish">Thai Panang Red Curry</h2>
+                        <img class="food img-thumbnail" src="./media/red-curry.jpg" alt="Panang Red Curry">
+                        <p class="source">Photo by: Kurman Communications</p>
+                    </div>
                     </article>
                 </section>
                 
-                <section class="row">
-                    <div class="col">
+                <section class="row"> <!--second row with recipe and aside bio on the right-->
+                    <article class="col-sm-12 col-md-12 col-lg-8">
+                    <div>
                         <h3 class="dish1">Chicken Pho</h3>
                         <h3 class="date">October 19, 2019</h3>
-                        <img class="img1" src="./media/pho.jpg" alt="Pho">
+                        <img class="img1 img-fluid" src="./media/pho.jpg" alt="Pho">
                         <p class="source">Photo by: Global Panorama</p>
                         <p class="info">Pho is a classic Vietnamese noodle soup bowl. This recipe is for a chicken broth rather than the beef broth you will typically have at a restaurant.
                             My mom used to always make the beef broth, but ever since my Uncle from France visited Seattle and shared his chicken broth recipe, my mom has only made this broth ever since.
@@ -61,14 +75,27 @@
                             We typically use all of it from bean sprouts to garlic chili oil, but it is up to you! 
                             One note to add about this recipe is that the longer the pho broth is boiled, the better the taste and flavor. Enjoy!</p>
                     </div>
+                    </article>
+
+                    <aside class="col-sm-12 col-md-12 col-lg-4">
+                    <article>
+                    <div>
+                        <h3 class="name">Lasamy Vongkhamchanh</h3>
+                        <a href="kvongkha-our-story.html">
+                            <img class="img2" src="./media/mom1.jpg" alt="Lasamy Vongkhamchanh"/>
+                        </a>
+                        <p class="bio font-italic">Lasamy Vongkhamchanh, also know as Lisa, Mom, Auntie, Sister, Wife, and Daughter, 
+                                    has practiced cooking Southeast Asian cuisine since she was a young girl. 
+                                    She loves to cook for family gatherings like potlucks and holidays because she believes that food is the best gift to give anyone. </p>
+                    </div>
+                    </article>
+                    </aside>
                 </section>
 
                 <section class="row2">
-                    <article>
-                        <div class="border">
-                            <h3>Ingredients</h3>
-                            <p>Servings: 4-6</p>
-                        </div>
+                    <article class="col">
+                        <h3 class="subhead">Ingredients</h3>
+                        <p>Servings: 4-6</p>
                         <ul>
                             <li>1 half or whole chicken as stalk</li>
                             <li>1 ginger root</li>
@@ -117,23 +144,19 @@
                     </article>
                 </section>
             </main>
-            <aside> <!--aside smaller content on the right side column-->
-                <section class="row1-1">
-                <div class="col2">
-                <a href="kvongkha-our-story.html">
-                    <img class="img2" src="./media/mom1.jpg" alt="Lasamy Vongkhamchanh"/>
-                </a>
-                <p class="bio">Lasamy Vongkhamchanh, also know as Lisa, Mom, Auntie, Sister, Wife, and Daughter, 
-                            has practiced cooking Southeast Asian cuisine since she was a young girl. 
-                            She loves to cook for family gatherings like potlucks and holidays because she believes that food is the best gift to give anyone. </p>
-                    </div>
-                </section>
-            </aside>
+
+
+
         </div>
 
             <footer>
                 <p class="author">Created by Karissa Vongkhamchanh</p>
             </footer>
     </div>
+
+<!--jQuery first, then Popper.js, then Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
