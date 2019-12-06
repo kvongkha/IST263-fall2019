@@ -3,43 +3,41 @@
 
 body {
     font-family: 'Sunflower', sans-serif;
-    background-color: papayawhip;
+    background-color: #5b4e4b;
+    color: white;
 }
-
-.header h1 {
-    text-align: center;
-    font-family: 'Kalam', cursive;
-    background-color: peru;
-    color: palegoldenrod;
-    font-size: 48px;
-    padding: 30px;
-}
-
 /*navigation bar */
-.bar {
+.navbar {
     list-style-type: none;
     background-color: olivedrab;
     overflow: hidden;
     font-family: 'Kalam', cursive;
     font-size: 18px;
     padding: 5px;
+    width: 100%;
 }
 
-.page {
+.nav-item {
     float: left;
 }
 
-.page a {
+
+.nav-link {
     display: block;
-    color: white;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
+    float: left;
 }
 
 
-.page a:hover {
+.nav-link:hover {
     background-color: palegoldenrod;
+}
+
+/*links to credit sources*/
+.link {
+    color: #E0FFFF;
 }
 
 
@@ -48,7 +46,6 @@ body {
     text-align: left;
     font-family: 'Kalam', cursive;
     font-size: 24px;
-    margin: 10px;
 }
 
 /*h3 of second row image */
@@ -74,6 +71,7 @@ body {
     text-align: center;
     display: inline-block;
     font-size: 14px;
+    color: #2a002a;
 }
 
 .img2 {
@@ -89,6 +87,7 @@ body {
     font-family: 'Kalam', cursive;
     font-size: 20px;
     padding: 1rem;
+    color: #2a002a;
 }
 
 /*image of instructional recipe */
@@ -100,7 +99,12 @@ body {
 /*gallery of dishes */
 .food {
     height: auto;
-    width: 350px;
+    width: 325px;
+}
+
+/*adding padding and margin between rows*/
+.row {
+    padding: 30px;
 }
 
 /* recipe instructions with border box */
@@ -108,6 +112,7 @@ body {
     border: solid;
     padding: 10px;
     margin: 10px;
+    color:white;
 }
 
 .subhead {
@@ -116,6 +121,10 @@ body {
     font-size: 20px;
     text-align: left;
     padding: 10px;
+}
+
+.description {
+    padding: 30px;
 }
 
 /*footer styling */
@@ -152,4 +161,28 @@ body {
 /*styling for recipe page */
 .row1-3 {
     border: solid;
+}
+
+/*image banner*/
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Kalam', cursive;
+    font-size: 48px;
+}
+.bgimage {
+    background-image: url('/media/food-banner.jpg');
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bgimage h1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,50%);
 }
