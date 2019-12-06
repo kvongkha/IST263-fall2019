@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300&display=swap');
+
+body {
+    font-family: 'Sunflower', sans-serif;
+    background-color: #5b4e4b;
+    color: white;
+}
+/*navigation bar */
+.navbar {
+    list-style-type: none;
+    background-color: olivedrab;
+    overflow: hidden;
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+    padding: 5px;
+    width: 100%;
+}
+
+.nav-item {
+    float: left;
+}
+
+
+.nav-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    float: left;
+}
+
+
+.nav-link:hover {
+    background-color: palegoldenrod;
+}
+
+/*links to credit sources*/
+.link {
+    color: #E0FFFF;
+}
+
+
+/*h2 of first row images*/
+.dish {
+    text-align: left;
+    font-family: 'Kalam', cursive;
+    font-size: 24px;
+}
+
+/*h3 of second row image */
+.dish1 {
+    font-family: 'Kalam', cursive;
+    font-size: 28px;
+    text-align: center;
+}
+
+.source {
+    font-size: 12px;
+    text-align: center;
+}
+
+.date {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/*aside info about mom */
+.bio {
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    color: #2a002a;
+}
+
+.img2 {
+    height: auto;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+    padding: 1rem;
+    color: #2a002a;
+}
+
+/*image of instructional recipe */
+.img1 {
+    width: 650px;
+    height: auto;
+}
+
+/*gallery of dishes */
+.food {
+    height: auto;
+    width: 325px;
+}
+
+/*adding padding and margin between rows*/
+.row {
+    padding: 30px;
+}
+
+/* recipe instructions with border box */
+.row2 {
+    border: solid;
+    padding: 10px;
+    margin: 10px;
+    color:white;
+}
+
+.subhead {
+    border-bottom: solid;
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+.description {
+    padding: 30px;
+}
+
+/*footer styling */
+.author {
+    font-style: italic;
+}
+
+.info {
+    line-height: 200%;
+    text-align: left;
+}
+
+/*styling for our-story page */
+.img-family {
+    height: auto;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    padding: 20px;
+}
+
+.h2-story {
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+}
+
+.story {
+    line-height: 200%;
+    text-align: justify;
+}
+
+
+/*styling for recipe page */
+.row1-3 {
+    border: solid;
+}
+
+/*image banner*/
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Kalam', cursive;
+    font-size: 48px;
+}
+.bgimage {
+    background-image: url('/media/food-banner.jpg');
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bgimage h1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,50%);
+}
